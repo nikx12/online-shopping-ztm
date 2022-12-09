@@ -1,7 +1,6 @@
-<<<<<<< HEAD
+
 # online-shopping-ztm
-A repo created for react projects created via ZTM course.
-=======
+A repo created for react projects created via ZTM course
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
