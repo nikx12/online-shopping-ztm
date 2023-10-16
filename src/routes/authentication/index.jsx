@@ -19,7 +19,7 @@ const Authentication = () => {
 		async function _getRedirectResult() {
  
       const response = await getRedirectResult(auth);
-			console.log(response);
+			// console.log(response);
       if (response) { 
         const userDocRef = await createUserDocFromAuth(response.user);
       }
