@@ -3,7 +3,7 @@ import { auth, createUserDocFromAuth } from "../../utils/firebase/firebase.utils
 import { getRedirectResult } from "firebase/auth";
 import SignUpForm from "../../components/sign-up/sign-up-form.component";
 import SignInForm from "../../components/sign-in/sign-in-form.component";
-import './authentication.styles.scss';
+import {AuthenticatonContainer} from './authentication.styles';
 
 const Authentication = () => {
 	
@@ -37,16 +37,10 @@ const Authentication = () => {
 
 
 	return (
-		<div className="authentication-container">
+		<AuthenticatonContainer>
 			<SignInForm />
-			{/* <button onClick={logGoogleUser}>
-				Sign In with Google Popup
-			</button>
-			<button onClick={signInWithGoogleRedirect}>
-				Sign In with Google signInWithRedirect
-			</button> */}
 			<SignUpForm/>
-		</div>
+		</AuthenticatonContainer>
 	);
 };
 
