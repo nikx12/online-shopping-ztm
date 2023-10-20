@@ -16,12 +16,11 @@ import {
 } from './styles';
 
 const Navigation = () => {
-  const { currentUser, setCurrentUser } = useContext(UserContext);
+  const { currentUser } = useContext(UserContext);
   const { isCartOpen } = useContext(CartContext);
-  console.log('here',currentUser);
   const signOutHandler = async () => {
     await signOutUser();
-    setCurrentUser(null);
+    // setCurrentUser(null);
   };
 
   return (
